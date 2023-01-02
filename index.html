@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit's Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h3 class="brand">the Weather</h3>
+            <div class="hello">
+                <h1 class="temp">16&#176;</h1>
+                <div class="city-name">
+                    <h1 class="name">London</h1>
+                    <small>
+                        <span class="time">06:09</span>
+                        -
+                        <span class="date">Monday Sep 19</span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="./icons/day/113.png" alt="icon" class="icon" width="50" height="50">
+                    <span class="condition">Cloudy</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form id="locationInput">
+                <input type="text" class="search" placeholder="search location">
+                <button type="submit" class="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                </button>
+            </form>
+
+            <ul class="cities">
+                <li class="city">Delhi</li>
+                <li class="city">Mumbai</li>
+                <li class="city">Lucknow</li>
+                <li class="city">Bangalore</li>
+            </ul>
+            <ul class="details">
+                <h4>Weather Details</h4>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud">89%</span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="humidity">64%</span>
+                </li>
+                <li>
+                    <span>Winds</span>
+                    <span class="wind">8km/h</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
